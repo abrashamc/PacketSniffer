@@ -1,11 +1,14 @@
 # Packet Sniffer
 
-Connect to remote servers through SSHv2 protocol and execute pre-defined commands.\
-Can be used for software provisioning, configuration management, and application-deployment enabling infrastructure as code.  
-It runs on many Unix-like systems, and can configure both Unix-like systems and Microsoft Windows.
+Sniff traffic from wired/wireless NIC.
 
 ## Run
 - sudo python3 network_app.py
+- Specify: 
+  - interface (e.g. enp0s8)
+  - number of packets to capture (0 is infinity)
+  - timeout (in seconds)
+  - protocol to filter (0 is all)
 
 ## Notes
 Current supported filters - ARP, BOOTP, ICMP.\
